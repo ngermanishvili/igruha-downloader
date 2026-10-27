@@ -1,2 +1,6 @@
-.torrents
-torrents
+node_modules/
+.DS_Store
+
+# Torrent files
+*.torrent
+torrents/
