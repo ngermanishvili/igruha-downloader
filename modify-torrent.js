@@ -83,8 +83,8 @@ console.log('name:', torrent.info?.name?.toString('utf-8'));
 // Modify metadata - include filename, strip all igruha/rutracker references
 const rawName = torrent.info?.name?.toString('utf-8') || 'unknown';
 const cleanName = rawName.replace(/\.[^.]+$/, '').replace(/[._-]/g, ' ').trim();
-torrent.comment = `${cleanName} - testing purposes only`;
-torrent['created by'] = `${cleanName} - testing purposes only`;
+torrent.comment = `${cleanName} - MaxGames.cc`;
+torrent['created by'] = `${cleanName} - MaxGames.cc`;
 
 // Remove publisher fields
 delete torrent.publisher;
